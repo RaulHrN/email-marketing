@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Nunito;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.emailBody{
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #687d57;
+    padding-top: 350px;
+}
+
+.banner{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+}
+
+.content{
+    width: 95%;
+    position: static;
+    top: 95%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.426);
+    z-index: 999;
+}
+
+.bodyText h3{
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #872f40;
+}
+
+.bodyText p{
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 2px rgba(85, 85, 85, 0.603);
+}
+
+.products{
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.products figure{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.products figure img{
+    max-height: 300px;
+    margin: 20px;
+    width: auto;
+}
