@@ -7,8 +7,13 @@
     font-family: Nunito;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,25 +22,26 @@ body{
 
 .emailBody{
     max-width: 600px;
+    min-height: 100%;
+    background-color: #687d57;
+}
+
+.box{
+    position: relative;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
-    background-color: #687d57;
-    padding-top: 350px;
 }
 
 .banner{
     width: 100%;
-    position: absolute;
-    top: 0%;
 }
 
 .content{
-    width: 95%;
-    position: static;
+    position: absolute;
     top: 95%;
+    width: 95%;
     padding: 30px;
     background-color: white;
     border-radius: 8px;
@@ -64,10 +70,71 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border-radius: 8px;
+    padding: 0px 50px 20px 50px;
+    box-shadow: 0px 0px 2px rgba(92, 92, 92, 0.493);
 }
 
 .products figure img{
     max-height: 300px;
     margin: 20px;
     width: auto;
+}
+
+.products p{
+    min-width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.products :nth-child(2){
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.products :nth-child(3){
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.products button{
+    padding: 15px;
+    background-color: #872f40;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px #687d57;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer button{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px rgba(92, 92, 92, 0.493);
+    font-size: 20px;
+     font-weight: 500;
+}
+
+.socialMedia{
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialMedia a{
+    text-decoration: none;
+    color: #872f40;
+    font-size: 20px;
 }
